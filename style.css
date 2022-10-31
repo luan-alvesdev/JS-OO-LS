@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(201, 128, 128);
+}
+
+main {
+    padding: 10px;
+    height: 80vh;
+}
+
+form {
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px gray;
+    /* text-align: center; */
+}
+
+input {
+    margin-bottom: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input[type="date"] {
+    padding: 5px;
+    outline: none;
+    width: 90%;
+}
+
+input[type="text"] {
+    padding: 5px;
+    outline: none;
+    width: 90%;
+}
+
+select {
+    padding: 5px;
+    outline: none;
+    width: 90%;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background-color: rgb(27, 175, 27);
+    width: 50%;
+}
+
+.lista_filmes {
+    padding: 10px;
+    margin-top: 10px;
+    height: 60%;
+}
+
+ul {
+    list-style: none;
+    overflow: scroll;
+    height: 100%;
+}
+
+li {
+    border-bottom: 1px solid darkslateblue;
+    margin-top: 5px;
+}
+
+button {
+    margin-left: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

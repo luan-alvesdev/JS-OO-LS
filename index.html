@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>AluraFlix</title>
+</head>
+
+<body>
+    <main>
+        <form action="#" form="formulario" id="formulario">
+            <h1>AluraFlix</h1>
+            <input type="hidden" name="id">
+            <div>
+                <label for="titulo">Título:</label>
+                <input type="text" name="titulo" max-lengtgh="50" id="titulo" required>
+            </div>
+            <div>
+                <label for="classificacao">Classificação:</label>
+                <select form="formulario" id="classificacao" autofocus name="classificacao">
+                    <option value=""></option>
+                    <option value="Livre">Livre</option>
+                    <option value="12 anos">12 anos</option>
+                    <option value="14 anos">14 anos</option>
+                    <option value="16 anos">16 anos</option>
+                    <option value="18 anos">18 anos</option>
+                </select>
+            </div>
+            <div>
+                <label for="genero">Gênero:</label>
+                <select form="formulario" id="genero" autofocus name="genero">
+                    <option value=""></option>
+                    <option value="Ação">Ação</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Documentário">Documentário</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Ficcao">Ficção científica</option>
+                </select>
+            </div>
+            <div>
+                <label for="lancamento">Data de lançamento:</label>
+                <input type="date" id="lancamento" titulo="lancamento">
+            </div>
+            <div>
+                <label for="titulo">URL:</label>
+                <input type="text" name="url" id="url" required>
+            </div>
+            <input type="submit" value="Salvar">
+        </form>
+
+        <div class="lista-filmes">
+            <label for="pesquisar">Pesquisar:</label>
+            <input type="text" id="pesquisa" placeholder="Pesquisar" onkeyup="criarListaDeFilmes(this.value)">
+            <ul id="lista-ul">
+
+            </ul>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
