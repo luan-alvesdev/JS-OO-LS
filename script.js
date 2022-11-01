@@ -47,7 +47,7 @@ function criarListaDeFilmes(filtro='') {
         let botoesEditarExcluir = `<button onClick="excluir(${key})">[Excluir]</button>
                  <button onClick="editar(${key})">[Editar]</button>`
     
-        linha.innerHTML = "Título: " + item.titulo + "<br>Classificação: " + item.classificacao + "<br>Gênero: " + item.genero + "<br>Lançamento: " + item.lancamento + botoesEditarExcluir + "<br>" + item.url;
+        linha.innerHTML = "<h2> " + item.titulo + "</h2>" + item.url + "<p>Classificação: " + item.classificacao + "<br>Gênero: " + item.genero + "<br>Lançamento: " + item.lancamento + "<br>" + botoesEditarExcluir + "</p>";
         ulFilmes.appendChild(linha);
 }
 });

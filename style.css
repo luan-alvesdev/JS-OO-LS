@@ -62,20 +62,37 @@ input[type="submit"] {
     height: 60%;
 }
 
-ul {
-    list-style: none;
-    overflow: scroll;
-    height: 100%;
-}
-
-li {
-    border-bottom: 1px solid darkslateblue;
-    margin-top: 5px;
-}
-
 button {
     margin-left: 10px;
     border: none;
     background: none;
     cursor: pointer;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    overflow: scroll;
+    height: 100%;
+    text-align: center;
+}
+
+li {
+    width: 400px;
+    height: 450px;
+    border-bottom: 1px solid darkslateblue;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 350px;
+    height: 300px;
+}
+
+p {
+    position: relative;
+    left: 20px;
+    text-align: start;
 }

@@ -31,7 +31,7 @@
             </div>
             <div>
                 <label for="genero">Gênero:</label>
-                <select form="formulario" id="genero" autofocus name="genero">
+                <select form="formulario" id="genero" autofocus name="genero"> 
                     <option value=""></option>
                     <option value="Ação">Ação</option>
                     <option value="Comédia">Comédia</option>
@@ -56,7 +56,7 @@
 
         <div class="lista-filmes">
             <label for="pesquisar">Pesquisar:</label>
-            <input type="text" id="pesquisa" placeholder="Pesquisar" onkeyup="criarListaDeFilmes(this.value)">
+            <input type="text" id="pesquisa" placeholder="Pesquisar" onclick="criarListaDeFilmes(this.value)">
             <ul id="lista-ul">
 
             </ul>
